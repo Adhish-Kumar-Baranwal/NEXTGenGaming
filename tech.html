@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT Gen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f618d62742.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"> <i class="fas fa-headset"></i>NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#courses" class="navbar__links"> Courses </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/#aboutus" class="navbar__links"> About Us </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech.html" class="navbar__links"> Contact Us </a> <!-- the '/' in herf will redirect in the same page use this to load different page at the same time -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact us -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us you query</h3>
+                    <form name="myForm" onsubmit="return validation()" style="font-size: large;">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>
